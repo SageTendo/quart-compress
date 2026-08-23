@@ -1,10 +1,8 @@
 [build-system]
-requires = [
-    "flit",
-    "quart",]
+requires = ["flit_core>=3.11,<4", "quart"]
 build-backend = "flit.buildapi"
 
-[tool.flit.metadata]
+[project]
 module = "quart_compress"
 dist-name = "quart-compress2"
 author = "Florian Dahlitz"
