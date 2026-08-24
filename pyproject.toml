@@ -18,6 +18,9 @@ dependencies = [
     "quart",
 ]
 
+[tool.flit.module]
+name = "quart_compress"
+
 [tool.tox]
 legacy_tox_ini = """
 [tox]
