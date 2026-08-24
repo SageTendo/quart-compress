@@ -1,20 +1,22 @@
 [build-system]
-requires = [
-    "flit",
-    "quart",]
-build-backend = "flit.buildapi"
+requires = ["flit_core>=3.11,<4", "quart"]
+build-backend = "flit_core.buildapi"
 
-[tool.flit.metadata]
-module = "quart_compress"
-dist-name = "quart-compress2"
-author = "Florian Dahlitz"
-author-email = "f2dahlitz@freenet.de"
-home-page = "https://github.com/DahlitzFlorian/quart-compress"
-classifiers = ["License :: OSI Approved :: MIT License"]
-requires = [
-    "quart",]
+[project]
+name = "quart-compress2"
+version = "1.1.0"
+description = "Compress responses in Quart"
+readme = "README.md"
 requires-python = ">=3.7"
-description-file = "README.md"
+authors = [
+    { name = "Florian Dahlitz", email = "f2dahlitz@freenet.de" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "quart",
+]
 
 [tool.tox]
 legacy_tox_ini = """
